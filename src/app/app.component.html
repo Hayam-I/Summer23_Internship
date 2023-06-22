@@ -1,0 +1,19 @@
+<h1>{{ title | translate }}</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+
+<!-- src/app/app.component.html -->
+
+<div>
+  <button (click)="setLang('ar')">French</button>
+  <button (click)="setLang('en')">English</button>
+</div>
+
+<app-animation></app-animation>
+<router-outlet></router-outlet>
+<app-messages></app-messages>
+
+
+
